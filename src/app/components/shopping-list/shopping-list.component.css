@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemCard {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 1rem;
+        list-style: none;
+
+}
+
+.itemCardEven {
+    color: darkslategrey;
+    background-color: whitesmoke;
+    
+}
+
+.itemCardOdd {
+    color: whitesmoke;
+    background-color: darkslategrey;
+}
+
+.itemInfo {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+
+input {
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+button {
+    padding: 0.2rem;
+    margin: 0.2rem;
+}

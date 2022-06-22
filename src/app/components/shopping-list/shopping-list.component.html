@@ -1,0 +1,21 @@
+<div class="container">
+    <h1 class="header">My shopping list</h1>
+
+    <ul>
+
+        <div [ngClass]="getClass(i)" *ngFor="let item of shoppingList; let i = index">
+            <div class="itemInfo">
+                <li>Product: {{item.name}}</li>
+                <li>Quantity: {{item.quantity}}</li>
+            </div>
+
+            <button (click)="onRemoveItem(i)">Remove</button>
+            <button (click)="onDecreaseQuantity(i)">Decrease Amount</button>
+            <button (click)="onMarkAsImportant(i)">Mark as Important</button>
+        </div>
+    </ul>
+    <input type="text" name="item" id="item" placeholder="Name" [(ngModel)]="name">
+    <input type="text" name="quantity" id="quantity" placeholder="Quantity" [(ngModel)]="quantity">
+    <button (click)="addItem()">Add item</button>
+
+</div>
